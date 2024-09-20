@@ -36,6 +36,8 @@
 	font-display: swap;
 }
 
+
+
 body {
 	font-family: "Roboto";
 	color: #212121;
@@ -162,7 +164,7 @@ body {
 
 .hero-title, .hero-butoon {
     position: relative;
-    z-index: 2; /* Щоб текст і кнопка були поверх затемнення */
+    z-index: 2;
 }
 /* ABOUT */
 .about {
@@ -293,12 +295,92 @@ body {
 	padding-bottom: 30px;
 }
 
+.list {
+	display: flex;
+	gap: 10px;
+	margin: 0 0 30px 32px;
+}
+
+.list svg {
+	width: 20px;
+	height: 20px;
+	fill: #AFB1B8;
+	transition: fill .5s linear;
+}
+
+.list a {
+	line-height: 10px;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: all .2s linear;
+}
+
+
+.list a:hover {
+	background: #2196F3;
+
+}
+
+.list a:hover svg {
+	fill: #fff;
+}
+
+/* CUSTOMERS */
+ .customers {
+	max-height: 700px;
+	background: #FFFFFF;
+ }
+
+ .customers-title{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 42px;
+	padding: 94px 0 50px 0;
+ }
+ .list-customer {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	gap: 30px;
+    padding-bottom: 94px;
+}
+
+.list-customer svg {
+	fill: #AFB1B8;
+	width: 106px;
+	height: 60px;
+	margin: 16px 32px;
+}
+
+.list-customer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #AFB1B8
+}
+
+.list-customer a:hover svg {
+	fill: #2196F3;
+}
+
+.list-customer a:hover {
+	border: 1px solid #2196F3;
+}
+
 /* FOOTER */
+
 
 .footer {
 	padding: 60px 0;
 	background: #2F303A;
-	color: #fff;
+	color: #ff0000;
 }
 
 .footer-logo {
@@ -320,6 +402,55 @@ body {
 	color: #757575;
 	text-decoration: none;
 	align-self: flex-start;
+}
+
+.socials  {
+	display: block;
+	position: relative;
+	left: 250px;
+	top: -80px;
+	max-height: 10px;
+}
+
+.socials-title {
+ text-transform: uppercase;
+ color: #fff;
+ padding-bottom: 20px;
+}
+
+
+.list-footer {
+	display: flex;
+	gap: 10px;
+	margin: 0 0 30px 0;
+}
+
+.list-footer a {
+	line-height: 10px;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: all .2s linear;
+	background: #FFFFFF1A;
+}
+
+.list-footer svg {
+	width: 20px;
+	height: 20px;
+	fill: #AFB1B8;
+	transition: fill .5s linear;	
+}
+
+.list-footer a:hover {
+	background: #2196F3;
+
+}
+
+.list-footer a:hover svg {
+	fill: #fff;
 }
 
 .footer-menu-item:hover {
